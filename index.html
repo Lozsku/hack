@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Software Developer</title>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <!-- <a href="#" class="coder">coder</a> -->
+            <a href="index.html" class="coder"><img src="images/h.png"></a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section class="imgs">
+            <img src="images/imgm1.png" id="img1">
+            <img src="images/imgm2.png" id="img2">
+            <img src="images/imgm3.png" id="img3">
+            <h2 id="text">I'am Harsha</h2>
+            <a href="#about" id="btn">Explore</a>
+            <img src="images/imgm4.png" id="img4">
+        </section>
+        <div class="about" id="about">
+            <h2>Hacking Coding Gaming</h2>
+            <p>The Verge’s gaming section brings the latest video game news, reviews of the most exciting releases, and interviews with the industry’s biggest names.<br>
+                We cover everything from PlayStation and Xbox blockbusters, to quirky Nintendo games, to the cool indie gems on PC and Android that you might otherwise miss.
+            <br>The Verge’s gaming section brings the latest video game news, reviews of the most exciting releases, and interviews with the industry’s biggest names.<br>
+            We cover everything from PlayStation and Xbox blockbusters, to quirky Nintendo games, to the cool indie gems on PC and Android that you might otherwise miss. <br><br>
+            Pong is a table tennis–themed twitch arcade sports video game, featuring simple two-dimensional graphics, manufactured by Atari and originally released in 1972. 
+            It was one of the earliest arcade video games; it was created by Allan Alcorn as a training exercise assigned to him by Atari co-founder Nolan Bushnell, but
+             Bushnell and Atari co-founder Ted Dabney were surprised by the quality of Alcorn's work and decided to manufacture the game. Bushnell based the game's 
+             concept on an electronic ping-pong game included in the Magnavox Odyssey, the first home video game console. In response, Magnavox later sued Atari for patent infringement. <br><br>
+             Pong is a table tennis–themed twitch arcade sports video game, featuring simple two-dimensional graphics, manufactured by Atari and originally released in 1972.
+              It was one of the earliest arcade video games; it was created by Allan Alcorn as a training exercise assigned to him by Atari co-founder Nolan Bushnell, but 
+              Bushnell and Atari co-founder Ted Dabney were surprised by the quality of Alcorn's work and decided to manufacture the game. Bushnell based the game's concept
+               on an electronic ping-pong game included in the Magnavox Odyssey, the first home video game console. In response, Magnavox later sued Atari for patent infringement. <br><br>
+               Pong is a table tennis–themed twitch arcade sports video game, featuring simple two-dimensional graphics, manufactured by Atari and originally released in 1972.
+               It was one of the earliest arcade video games; it was created by Allan Alcorn as a training exercise assigned to him by Atari co-founder Nolan Bushnell, but 
+               Bushnell and Atari co-founder Ted Dabney were surprised by the quality of Alcorn's work and decided to manufacture the game. Bushnell based the game's concept
+                on an electronic ping-pong game included in the Magnavox Odyssey, the first home video game console. In response, Magnavox later sued Atari for patent infringement.</p>
+
+        </div>
+
+        <section class="cta">
+            <h1>For More Information</h1>
+            <a href="" class="hero-btn">CONTACT ME</a>
+
+        </section>  
+        <section class="footer">
+            <h4>Contact Me</h4>
+            <div class="row">
+                <div class="office">
+                    <img src="images/home.png" id="home">
+                    <div class="layer">
+                        <p>Karakoram, IIT Delhi</p>
+                    </div>
+                </div>
+                <div class="office">
+                    <img src="images/email.png" id="mail">
+                    <div class="layer">
+                        <a>cs1200390@iitd.cse.ac.in</a>
+                    </div>
+                </div>
+                <div class="office">
+                    <img src="images/phone.png" id="phone">
+                    <div class="layer">
+                        <a>+91 XXX XXX XXXX</a>
+                    </div>
+                </div>
+            </div>
+            <p>────────────────────────────────────────────────────────────────────────</p>
+            <div class="icons">
+                <i class="fa fa-github"></i>
+                <i class="fa fa-instagram" onclick="location.href='https://www.instagram.com/harsha.__56/'"></i>
+                <i class="fa fa-linkedin" onclick="location.href='https://www.linkedin.com/in/harsha-vardhan-1ab922218'"></i>
+                <i class="fa fa-facebook" onclick="location.href='https://www.facebook.com/profile.php?id=100007002586219'"></i>
+            </div>
+            <p>Designed & Made by Me With <i class="fa fa-heart-o"></i> on Coding!</p>
+        </section>
+
+
+        <script>
+            let img1=document.getElementById('img1');
+            let img2=document.getElementById('img2');
+            let img3=document.getElementById('img3');
+            let img4=document.getElementById('img4');
+            let btn=document.getElementById('btn');
+            let text=document.getElementById('text');
+
+            window.addEventListener('scroll',function(){
+                let value=window.scrollY;
+                img1.style.top=value*0.67+ 'px';
+                img2.style.top=value*0.58+ 'px';
+                img3.style.top=value*0.5+ 'px';
+                img4.style.top=value*0+ 'px';
+                text.style.marginTop=value*0.87+ 'px';
+                btn.style.marginTop=value*1.3+'px';
+            })
+        </script>
+    </body>
+</html>
